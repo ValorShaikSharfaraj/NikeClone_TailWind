@@ -1,34 +1,35 @@
-import React from 'react'
+import { CustomerReviews, Footer, Hero, PopularProducts, Services,
+  SpecialOffer, Subscribe, SuperQuality
+ } from "./section"
 
 export default function App() {
   return (
     <main className='relative'>
-      Nav
+      {/* <Nav/> */}
       <section className='xl:padding-1 wide:padding-r
       padding-b'>
-        Hero
-      </section>
-
-      <section className='padding'>
-        Popular Products
+        <Hero />
       </section>
       <section className='padding'>
-        Super Quality
+        <PopularProducts />
+      </section>
+      <section className='padding'>
+        <SuperQuality />
       </section>
       <section className='padding-x py-10'>
-        Services
+        <Services />
       </section>
       <section className='padding'>
-        Special Offer
+        <SpecialOffer />
       </section>
       <section className='bg-pale-blue padding'>
-        Customer Reviews
+        <CustomerReviews />
       </section>
       <section className='padding-x sm:py-32 py-16 w-full'>
-        Subscribe
+        <Subscribe />
       </section>
       <section className='bg-black padding-x padding-t pb-8'>
-        footer
+        <Footer/>
       </section>
     </main>
   )
